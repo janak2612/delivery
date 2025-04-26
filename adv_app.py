@@ -1,11 +1,9 @@
-# prompt: please make app.py for the model /content/linear_reg.sav which made on my df data , and make for the streamlit
-
 import streamlit as st
 import pickle
 import numpy as np
 
 # Load the saved model
-model = pickle.load(open('linear_reg.sav', 'rb'))
+model = pickle.load(open('/content/linear_reg.sav', 'rb'))
 
 st.title('Sales Prediction App')
 
